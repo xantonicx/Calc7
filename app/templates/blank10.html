@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Title -->
+    <title>Calculator-10</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{% static 'assets/favicon.ico' %}" />
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}"/>
+</head>
+
+
+<body>
+{% include 'nav.html' %}
+        <header class="bg-dark py-1">
+            <div class="container px-4 px-lg-5 my-1">
+                <div class="text-center text-white">
+                    <h1 class="display-4 fw-bolder">Blank Template</h1>
+                    <p class="lead fw-normal text-white-50 mb-0">Blank description</p>
+                </div>
+            </div>
+        </header>
+
+        
+<!---Copilot -   bootstrap 2 column form A      -->
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-6">
+            <!-- First column content -->
+            <label for="input1">link to external webpage on global internet. (no url or view required)</label>    
+            <br/>
+            <a class="btn btn-primary" href="https://iversondigital-6a62a77b5ccf.herokuapp.com/" role=  "button">HTTPS iversondigital</a>
+            <br/><br/>
+            </div>
+        <div class="col-md-6">
+            <!-- Second column content -->
+            <label for="input2">django frame link to page in same folder</label>
+            <br/>
+            <a class="btn btn-primary" href="{% url 'blank5' %}" role="button">blank5</a>
+            <br/><br/>
+        </div>
+    </div><!-- row ends -->
+
+    <div class="row"><!-- row two -->
+        <div class="col-md-6">
+            <!-- First column content -->
+            <label for="input1">link to static image is static folder (no url or view required)</label>
+            <br/>
+            <a class="btn btn-primary" href="{% static 'images/unicode-logo.jpeg' %}" role=  "button">unicode-logo</a>
+            <br/><br/>
+            </div>
+        <div class="col-md-6">
+            <!-- Second column content -->
+            <label for="input2">django link to same page</label>   
+            <br/>
+            <a class="btn btn-primary" href="{% url 'blank10' %}" role="button">refresh</a>
+            <br/><br/>
+        </div>
+    </div><!-- row ends -->
+
+    <div class="row"><!-- row three -->
+        <div class="col-md-6">
+            <!-- First column content -->
+            <label for="input1">link to static image is static folder (no url or view required)</label>
+            <br/>
+            <a class="btn btn-primary" href="{% static 'images/unicode-logo.jpeg' %}" role=  "button">unicode-logo</a>
+            <br/><br/>
+            </div>
+        <div class="col-md-6">
+            <!-- Second column content -->
+            <label for="input2">django link to Link to Embedded You-Tube sub-templates</label>   
+            <br/>
+            <a class="btn btn-primary" href="{% url 'yt_000001' %}" role="button">yt_000001</a>
+            <br/><br/>
+        </div>
+    </div><!-- row ends -->
+
+</div><!-- container ends -->
+
+
+
+
+</body>
+</html>
+
